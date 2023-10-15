@@ -1,0 +1,137 @@
+*{
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ddecf7;
+    position: fixed;
+    top:0;
+    height:70px;
+    width:100%;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2px;
+    margin-top:17px;
+    height:35px;
+    width:140px;
+    /* background-color: rgb(131, 255, 127); */
+}
+.logo:hover{
+    cursor: pointer;
+}
+img{
+    height:35px;
+    width:140px;
+}
+.nav-links{
+    width:30%;
+    /* background-color: rgba(0, 255, 55, 0.925); */
+    
+}
+ul{
+    margin-top:25px;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+li{
+    gap:16px;
+}
+li a:hover{
+    color:rgb(33, 33, 146);
+    cursor: pointer;
+}
+li a:active {
+    color:red;
+}
+li a{
+    color:black;
+    text-decoration: none;
+}
+.search-bar{
+    height:70px;
+    width:280px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+}
+input{
+    width:190px;
+    height:47%;
+    padding:10px;
+    border-radius: 4px;
+    border: 2px solid #7292ad;
+}
+.search-button{
+    height:31px;
+    width:80px;
+    color:white;
+    background-color: #2294ed;
+    border:none;
+    border-radius: 4px;
+}
+.search-button:hover{
+    background-color: #1d69a3;
+    cursor: pointer;
+}
+.cards-container{
+    margin: 120px 20px 0 20px;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 34px;
+    /* column-gap: 50px; */
+    justify-content: space-evenly;
+}
+.cards{
+    width:300px;
+    height:350px;
+    /* background-color: olive; */
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px rgb(114, 113, 113);
+    transition: 0.3s;
+}
+.cards:hover{
+    box-shadow: 3px 3px 6px rgb(114,113,113);
+    cursor: pointer;
+}
+.card-header{
+    height:160px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-header img{
+    height:156px;
+    width:280px;
+    object-fit: cover;
+}
+.card-content{
+    margin-top: 6px;
+    padding: 7px;
+    line-height: 25px;
+}
+.card-content p{
+    font-size: 14px;
+    color:rgb(28, 28, 112)
+}
+
+.active{
+    color:rgb(10, 161, 221)
+}
